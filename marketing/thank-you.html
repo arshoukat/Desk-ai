@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank you — Desk Ai</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/config.js"></script>
+  </head>
+  <body>
+    <header class="site-header container">
+      <a class="logo" href="/" aria-label="Desk Ai home">
+        <svg class="logo-wordmark" width="118" height="28" viewBox="0 0 118 28" aria-hidden="true">
+          <text
+            x="0"
+            y="21"
+            fill="#8fad96"
+            font-family="Outfit, ui-sans-serif, system-ui, sans-serif"
+            font-size="22"
+            font-weight="700"
+            letter-spacing="-0.04em"
+          >Desk Ai</text>
+        </svg>
+      </a>
+    </header>
+
+    <main class="thank-you container">
+      <div class="thank-you-card">
+        <h1>You&apos;re in</h1>
+        <p class="highlight">
+          Check your email for your Desk Ai license key — it usually arrives
+          within a minute.
+        </p>
+        <p>
+          Open the app, paste the key once on the activation screen, then work
+          offline on this device whenever you need.
+        </p>
+        <a class="btn-primary" id="open-app" href="#" style="margin-top: 0.5rem">
+          Open Desk Ai
+        </a>
+        <p style="margin-top: 1.25rem; font-size: 0.8125rem">
+          Tip: in Chrome or Edge, use Install / Add to home screen for a
+          desktop-style window.
+        </p>
+      </div>
+    </main>
+
+    <script>
+      ;(function () {
+        var cfg = window.DESK_AI_CONFIG || {}
+        var app = document.getElementById('open-app')
+        if (app) app.href = cfg.appUrl || '#'
+      })()
+    </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+# Netlify Site #2 — Desk Ai marketing site
+#
+# In Netlify: New site → Import repo → set Base directory to "marketing"
+# Publish directory: marketing (same folder, no build step)
+
+[build]
+  publish = "."
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Pretty URL for thank-you page
+[[redirects]]
+  from = "/thank-you"
+  to = "/thank-you.html"
+  status = 200

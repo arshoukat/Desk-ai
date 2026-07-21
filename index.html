@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/icons/pwa-192x192.png" />
+    <meta name="theme-color" content="#141816" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desk Ai — Offline Document Assistant</title>
+    <script>
+      try {
+        var t = localStorage.getItem('selfai-theme')
+        document.documentElement.setAttribute(
+          'data-theme',
+          t === 'light' || t === 'dark' ? t : 'dark',
+        )
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark')
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

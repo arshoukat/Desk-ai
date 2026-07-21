@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desk Ai — Private offline document assistant</title>
+    <meta
+      name="description"
+      content="Ask questions about your documents on your own device. 100% offline after setup. No cloud, no subscriptions."
+    />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/config.js"></script>
+  </head>
+  <body>
+    <header class="site-header container">
+      <a class="logo" href="/" aria-label="Desk Ai home">
+        <svg class="logo-wordmark" width="118" height="28" viewBox="0 0 118 28" aria-hidden="true">
+          <text
+            x="0"
+            y="21"
+            fill="#8fad96"
+            font-family="Outfit, ui-sans-serif, system-ui, sans-serif"
+            font-size="22"
+            font-weight="700"
+            letter-spacing="-0.04em"
+          >Desk Ai</text>
+        </svg>
+      </a>
+      <nav class="nav-links" aria-label="Page">
+        <a href="#benefits">Benefits</a>
+        <a href="#who">Who it's for</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+      <a class="nav-cta" id="nav-buy" href="#">Buy</a>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <p class="brand-mark">Desk Ai</p>
+        <h1 class="hero-type" aria-label="Your documents. Your AI. Your machine.">
+          <span class="type-line" data-text="Your documents."></span>
+          <span class="type-line" data-text="Your AI."></span>
+          <span class="type-line" data-text="Your machine."></span>
+          <span class="type-cursor" aria-hidden="true"></span>
+        </h1>
+        <p class="lead">
+          A private document assistant that runs entirely on your computer.
+          Upload papers, notes, or PDFs — ask questions, get answers with
+          sources. Nothing is uploaded to a cloud.
+        </p>
+        <div class="hero-actions">
+          <a class="btn-primary" id="hero-buy" href="#">Buy Desk Ai — once</a>
+          <a class="btn-secondary" id="hero-open-app" href="#">Open the app</a>
+        </div>
+        <p class="trust-line">
+          <span>Free preview</span>
+          · Offline after full unlock
+          · No monthly fee
+        </p>
+      </section>
+
+      <section class="product-stage container" aria-hidden="true">
+        <div class="product-frame">
+          <div class="product-chrome">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="chrome-title">Desk Ai</span>
+          </div>
+          <div class="product-body">
+            <aside class="product-sidebar">
+              <p class="sidebar-label">Chats</p>
+              <div class="chat-item active">Thesis chapter 3</div>
+              <div class="chat-item">Grant proposal</div>
+              <div class="chat-item">Lab notes 2024</div>
+            </aside>
+            <div class="product-chat">
+              <div class="bubble bubble-user">
+                Summarize the methods section and list the sample size.
+              </div>
+              <div class="bubble bubble-ai">
+                <span class="ai-label">Desk Ai</span>
+                The study recruited <strong>128 participants</strong> across two
+                cohorts. Outcomes were measured at baseline and week 12 using
+                the validated scale described in §2.3.
+                <span class="cite">Source · methods.pdf</span>
+              </div>
+              <div class="composer-mock">
+                Ask about your documents…
+                <span class="send">↑</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="benefits">
+        <div class="section-head reveal">
+          <h2>Why researchers choose Desk Ai</h2>
+          <p>
+            Built for people who handle sensitive drafts, unpublished data, and
+            papers they cannot send to a cloud AI.
+          </p>
+        </div>
+
+        <div class="benefits">
+          <article class="benefit reveal">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4z" />
+                <path d="M9 12l2 2 4-4" />
+              </svg>
+            </div>
+            <h3>True privacy</h3>
+            <p>
+              Your files never leave the browser. The model runs on your GPU —
+              ideal for theses, patient notes, contracts, and confidential
+              research that must stay offline.
+            </p>
+          </article>
+
+          <article class="benefit reveal reveal-delay-1">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M4 19V5" />
+                <path d="M4 19h16" />
+                <path d="M8 15V9" />
+                <path d="M12 15V7" />
+                <path d="M16 15v-3" />
+              </svg>
+            </div>
+            <h3>Answers with sources</h3>
+            <p>
+              Ask in plain language. Desk Ai finds relevant passages in your
+              PDFs and notes, then answers with citations so you can verify
+              every claim against the original text.
+            </p>
+          </article>
+
+          <article class="benefit reveal reveal-delay-2">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <rect x="3" y="4" width="7" height="7" rx="1.5" />
+                <rect x="14" y="4" width="7" height="7" rx="1.5" />
+                <rect x="3" y="13" width="7" height="7" rx="1.5" />
+                <rect x="14" y="13" width="7" height="7" rx="1.5" />
+              </svg>
+            </div>
+            <h3>One workspace per project</h3>
+            <p>
+              Keep chats and documents separated by topic — grant A, paper B,
+              reading list C. Rename, clear, or delete without mixing contexts.
+            </p>
+          </article>
+
+          <article class="benefit reveal reveal-delay-3">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M12 3v12" />
+                <path d="M8 11l4 4 4-4" />
+                <path d="M4 19h16" />
+              </svg>
+            </div>
+            <h3>Your data, your backups</h3>
+            <p>
+              Export a full backup anytime and restore on another machine. You
+              own the archive — no vendor lock-in, no account portal required.
+            </p>
+          </article>
+
+          <article class="benefit reveal">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <rect x="5" y="3" width="14" height="18" rx="2" />
+                <path d="M9 7h6M9 11h6M9 15h4" />
+              </svg>
+            </div>
+            <h3>Install like a desktop app</h3>
+            <p>
+              Add Desk Ai to your dock or taskbar from Chrome or Edge. Same
+              calm interface, no Electron installers, updates when you reload.
+            </p>
+          </article>
+
+          <article class="benefit reveal reveal-delay-1">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <circle cx="12" cy="12" r="8" />
+                <path d="M12 8v4l2.5 1.5" />
+              </svg>
+            </div>
+            <h3>Pay once, keep using</h3>
+            <p>
+              One license fee. No per-token bills, no “pro seats,” no surprise
+              renewals. Activate a few devices and use Desk Ai as long as you
+              need it.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container reveal" id="compare">
+        <div class="section-head">
+          <h2>Cloud AI vs Desk Ai</h2>
+          <p>Same idea — ask questions about documents. Completely different risk.</p>
+        </div>
+        <div class="contrast">
+          <div class="container contrast-grid">
+            <div class="contrast-col old">
+              <h3>Typical cloud chatbots</h3>
+              <ul>
+                <li>Documents uploaded to someone else’s servers</li>
+                <li>Usage meters and monthly subscriptions</li>
+                <li>Needs internet for every answer</li>
+                <li>Hard to prove where sensitive text went</li>
+              </ul>
+            </div>
+            <div class="contrast-col new">
+              <h3>Desk Ai on your machine</h3>
+              <ul>
+                <li>Files stay in your browser storage</li>
+                <li>One-time purchase, no usage bill</li>
+                <li>Works fully offline after first setup</li>
+                <li>You can show auditors: nothing left the device</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="who">
+        <div class="section-head reveal">
+          <h2>Who Desk Ai is for</h2>
+          <p>
+            Built for people who legally or contractually cannot paste sensitive
+            documents into cloud AI.
+          </p>
+        </div>
+        <div class="audience-grid">
+          <article class="audience reveal">
+            <h3>Law firms &amp; legal teams</h3>
+            <p>
+              Summarize contracts, discovery, and case files without a single
+              page leaving your laptop. Attorney–client privilege protected by
+              design.
+            </p>
+          </article>
+          <article class="audience reveal reveal-delay-1">
+            <h3>Healthcare &amp; medical research</h3>
+            <p>
+              Query patient notes and research papers on-device. No PHI ever
+              touches a server — HIPAA-friendly by architecture, not just policy.
+            </p>
+          </article>
+          <article class="audience reveal reveal-delay-2">
+            <h3>Banks &amp; financial services</h3>
+            <p>
+              Let analysts query internal reports and filings fully air-gapped.
+              Passes strict infosec review — there is no cloud to review.
+            </p>
+          </article>
+          <article class="audience reveal">
+            <h3>Government &amp; public sector</h3>
+            <p>
+              Analyze sensitive files that must stay inside your network. Works
+              fully offline — deployable where cloud tools are prohibited.
+            </p>
+          </article>
+          <article class="audience reveal reveal-delay-1">
+            <h3>Academics &amp; researchers</h3>
+            <p>
+              Chat with your papers and notes privately. Free to start, one-time
+              price for the full workspace — no subscription eating your stipend.
+            </p>
+          </article>
+          <article class="audience reveal reveal-delay-2">
+            <h3>Journalists &amp; NGOs</h3>
+            <p>
+              Analyze leaked documents and sensitive sources with AI that runs
+              100% on your device. Protect your sources — nothing is uploaded.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="how-it-works">
+        <div class="section-head reveal">
+          <h2>Up and running in three steps</h2>
+          <p>No account portal. Buy, activate once, then work offline.</p>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <span class="step-num">1</span>
+            <strong>Buy once</strong>
+            <p>
+              Secure checkout. Your license key arrives by email within minutes.
+            </p>
+          </div>
+          <div class="step reveal reveal-delay-1">
+            <span class="step-num">2</span>
+            <strong>Activate the app</strong>
+            <p>
+              Paste the key one time. After that, Desk Ai unlocks on this device
+              forever — even without internet.
+            </p>
+          </div>
+          <div class="step reveal reveal-delay-2">
+            <span class="step-num">3</span>
+            <strong>Upload &amp; ask</strong>
+            <p>
+              Drop PDFs or text files into a chat and ask anything. Answers cite
+              your sources.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="pricing">
+        <div class="section-head reveal">
+          <h2>Free vs full Desk Ai</h2>
+          <p>
+            Try the free preview in your browser, then unlock saved history,
+            unlimited documents, and backups when you are ready.
+          </p>
+        </div>
+
+        <div class="plans-wrap reveal">
+          <table class="plans-table">
+            <thead>
+              <tr>
+                <th scope="col">Feature</th>
+                <th scope="col">Free</th>
+                <th scope="col" class="plans-paid">Full license</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Local AI chat (on your device)</td>
+                <td><span class="yes">Yes</span></td>
+                <td class="plans-paid"><span class="yes">Yes</span></td>
+              </tr>
+              <tr>
+                <td>Number of chats</td>
+                <td>1 temporary chat</td>
+                <td class="plans-paid">Unlimited</td>
+              </tr>
+              <tr>
+                <td>Chat history after reload</td>
+                <td><span class="no">Clears on reload</span></td>
+                <td class="plans-paid"><span class="yes">Saved on device</span></td>
+              </tr>
+              <tr>
+                <td>Document upload</td>
+                <td>1 file</td>
+                <td class="plans-paid"><span class="yes">Unlimited</span></td>
+              </tr>
+              <tr>
+                <td>Answers with citations</td>
+                <td><span class="yes">Yes</span> (for that file)</td>
+                <td class="plans-paid"><span class="yes">Yes</span></td>
+              </tr>
+              <tr>
+                <td>Export / restore backup</td>
+                <td><span class="no">No</span></td>
+                <td class="plans-paid"><span class="yes">Yes</span></td>
+              </tr>
+              <tr>
+                <td>Install as PWA app</td>
+                <td><span class="yes">Yes</span></td>
+                <td class="plans-paid"><span class="yes">Yes</span></td>
+              </tr>
+              <tr>
+                <td>Works offline after setup</td>
+                <td>Chat only*</td>
+                <td class="plans-paid"><span class="yes">Full workspace</span></td>
+              </tr>
+              <tr>
+                <td>Price</td>
+                <td><strong>$0</strong></td>
+                <td class="plans-paid">
+                  <strong>$<span id="price-display">29</span></strong>
+                  <span class="price-once"> one-time</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="plans-note">
+            *Free chat messages are not saved. Activate a license to keep history
+            and backups on this machine.
+          </p>
+        </div>
+
+        <div class="pricing-actions reveal">
+          <a class="btn-secondary" id="pricing-free" href="#">Try free</a>
+          <a class="btn-primary" id="pricing-buy" href="#">Get full Desk Ai</a>
+        </div>
+        <p class="pricing-foot reveal" style="text-align: center; margin-top: 0.75rem">
+          Full license · Secure checkout via Dodo Payments · No subscription
+        </p>
+      </section>
+
+      <section class="container">
+        <div class="cta-band reveal">
+          <h2>Ready for a quieter, private desk?</h2>
+          <p>
+            Stop pasting confidential drafts into cloud chatbots. Keep your
+            research library on your machine — and still get AI help when you
+            need it.
+          </p>
+          <a class="btn-primary" id="cta-buy" href="#">Buy Desk Ai</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p>Desk Ai · Private document assistant · Nothing leaves your device</p>
+    </footer>
+
+    <script>
+      ;(function () {
+        var cfg = window.DESK_AI_CONFIG || {}
+        var checkout = cfg.checkoutUrl || '#'
+        var app = cfg.appUrl || '#'
+        var price = cfg.priceUsd != null ? cfg.priceUsd : 29
+
+        var priceEl = document.getElementById('price-display')
+        if (priceEl) priceEl.textContent = String(price)
+
+        ;['nav-buy', 'hero-buy', 'pricing-buy', 'cta-buy'].forEach(function (id) {
+          var el = document.getElementById(id)
+          if (el) el.href = checkout
+        })
+        var openApp = document.getElementById('hero-open-app')
+        if (openApp) openApp.href = app
+        var freeBtn = document.getElementById('pricing-free')
+        if (freeBtn) freeBtn.href = app
+
+        // Typewriter for hero lines
+        ;(function typeHero() {
+          var lines = document.querySelectorAll('.type-line')
+          var cursor = document.querySelector('.type-cursor')
+          if (!lines.length) return
+
+          var reduce =
+            window.matchMedia &&
+            window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+          if (reduce) {
+            lines.forEach(function (line) {
+              line.textContent = line.getAttribute('data-text') || ''
+              line.classList.add('is-done')
+            })
+            if (cursor) cursor.style.display = 'none'
+            return
+          }
+
+          var lineIndex = 0
+          var charIndex = 0
+          var pauseAfterLine = 380
+          var charDelay = 48
+
+          function placeCursor(line) {
+            if (!cursor || !line) return
+            var rect = line.getBoundingClientRect()
+            var parent = line.parentElement.getBoundingClientRect()
+            cursor.style.top = rect.top - parent.top + (rect.height - cursor.offsetHeight) / 2 + 'px'
+            cursor.style.left = rect.left - parent.left + line.offsetWidth + 4 + 'px'
+            cursor.classList.add('is-on')
+          }
+
+          function typeNext() {
+            if (lineIndex >= lines.length) {
+              if (cursor) {
+                // leave blinking at end of last line
+                placeCursor(lines[lines.length - 1])
+              }
+              return
+            }
+            var line = lines[lineIndex]
+            var full = line.getAttribute('data-text') || ''
+            if (charIndex === 0) placeCursor(line)
+
+            if (charIndex < full.length) {
+              line.textContent = full.slice(0, charIndex + 1)
+              charIndex++
+              placeCursor(line)
+              setTimeout(typeNext, charDelay)
+            } else {
+              line.classList.add('is-done')
+              lineIndex++
+              charIndex = 0
+              setTimeout(typeNext, pauseAfterLine)
+            }
+          }
+
+          setTimeout(typeNext, 500)
+        })()
+
+        // Scroll reveal
+        var nodes = document.querySelectorAll('.reveal')
+        if (!('IntersectionObserver' in window)) {
+          nodes.forEach(function (n) {
+            n.classList.add('is-visible')
+          })
+        } else {
+          var io = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('is-visible')
+                  io.unobserve(entry.target)
+                }
+              })
+            },
+            { rootMargin: '0px 0px -8% 0px', threshold: 0.12 },
+          )
+          nodes.forEach(function (n) {
+            io.observe(n)
+          })
+        }
+      })()
+    </script>
+  </body>
+</html>
